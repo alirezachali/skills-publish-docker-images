@@ -1,0 +1,28 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/base:jammy",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "moby": false
+    },
+    "ghcr.io/devcontainers-extra/features/actionlint:1": {}
+  },
+  "forwardPorts": [8080],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "github.copilot",
+        "github.copilot-chat",
+        "redhat.vscode-yaml",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ],
+      "settings": {
+        "[yaml]": {
+          "editor.tabSize": 2,
+          "editor.defaultFormatter": "redhat.vscode-yaml",
+          "editor.insertSpaces": true
+        }
+      }
+    }
+  }
+}
